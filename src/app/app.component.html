@@ -1,7 +1,10 @@
 <div class="container">
-  <app-date-picker ></app-date-picker>
-  <app-date-box [date]="date" type="CounterType.Day"> </app-date-box>
-  <app-date-box [date]="date" type="CounterType.Hour"> </app-date-box>
-  <app-date-box [date]="date" type="CounterType.Minute"> </app-date-box>
-  <app-date-box [date]="date" type="CounterType.Second"> </app-date-box>
+  <h2 class="title">Pick a date to start the countdown</h2>
+  <app-date-picker></app-date-picker>
+  <div class="box-container">
+    <app-date-box [type]="CounterType.Day"> </app-date-box>
+    <app-date-box [type]="CounterType.Hour"> </app-date-box>
+    <app-date-box [type]="CounterType.Minute"> </app-date-box>
+    <app-date-box [type]="CounterType.Second"> </app-date-box>
+  </div>
 </div>

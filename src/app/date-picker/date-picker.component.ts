@@ -1,14 +1,17 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component } from '@angular/core';
+import { CountdownService } from '../shared/services/countdown.service';
 
 @Component({
   selector: 'app-date-picker',
   templateUrl: './date-picker.component.html',
   styleUrls: ['./date-picker.component.css']
 })
-export class DatePickerComponent implements OnInit {
-  constructor() { }
+export class DatePickerComponent {
+  date: Date;
+  constructor(private countService: CountdownService) {}
 
-  ngOnInit() {
+  onDateChanged() {
+    this.countService.setDate(this.date);
   }
 
 }

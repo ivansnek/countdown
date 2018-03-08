@@ -1,0 +1,22 @@
+.date-box {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  background-color: #fff;
+  padding: 50px;
+  border: #ddd 1px solid;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.value {
+  font-size: 50px;
+  color: #00727F;
+}
+.description {
+  padding: 0.5em;
+  font-size: 18px;
+  color: #5E7C7F;
+}
