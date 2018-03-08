@@ -7,8 +7,6 @@ import { CounterType } from './shared/types/counter-type';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  date: Date;
-  constructor() {
-    this.date = new Date();
-  }
+  CounterType = CounterType;
+  constructor() {}
 }

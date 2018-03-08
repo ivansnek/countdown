@@ -1,0 +1,11 @@
+::-webkit-datetime-edit { padding: 0.5em; }
+::-webkit-datetime-edit-fields-wrapper { background: #fff; }
+::-webkit-inner-spin-button { display: none; }
+::-webkit-calendar-picker-indicator { background: #C6F9FF; }
+
+.date-picker {
+  width: 200px;
+  font-size: 25px;
+  border-radius: 5px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
