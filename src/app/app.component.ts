@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CounterType } from './shared/types/counter-type';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  date: Date;
+  constructor() {
+    this.date = new Date();
+  }
 }
